@@ -1,0 +1,46 @@
+.sidebarRaw{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sidebarRaw_icon{
+    color: #606060;
+    font-size: large !important;
+}
+
+.sidebarRaw_title{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 500;   
+}
+
+.sidebarRaw:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.sidebarRaw:hover> .sidebarRaw_icon{
+    color: red;
+}
+
+.sidebarRaw:hover > .sidebarRaw_title{
+    font-weight: bold;
+}
+
+.sidebarRaw.selected{                      /*scss  =two class*/
+    background-color: lightgray;
+}
+
+/* .selected{
+    background-color: lightgray;
+} */
+
+.sidebarRaw.selected> .sidebarRaw_icon{
+    color: red;
+}
+
+.sidebarRaw.selected > .sidebarRaw_title{
+    font-weight: bold;
+}

@@ -1,0 +1,97 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+}
+
+.header_logo{
+    height: 25px;
+    object-fit: contain ;      /*good*/
+    margin-left:20px;
+}
+ @media only screen and (min-width:375px) and (max-width:516px){
+     
+    .header_left{
+        margin-right: 29px;
+        width: 80px;
+    }
+    .header_logo{
+        margin-left: 0px;
+    }
+    
+    .header_input{
+        margin-right: 0px;
+    }
+    .header_input > input{
+        width: 5px;
+    }
+    .header_icons{
+        padding-left: 30px;
+    }
+
+ }
+
+ @media only screen and (max-width:474px){
+
+    .header_left{
+        width: 120px;
+        padding-right: 0px;
+    }        
+     
+ }
+
+ @media only screen and (max-width:460px){
+    .header{
+        width: 26rem;
+    }
+ }
+
+ 
+
+.header_input{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border: 2px solid black;
+}
+
+.header_input > input{
+flex: 1;                      /*cover as much as you can*/
+border: none;            /*good*/
+}
+
+@media only screen and (min-width:516px) and (max-width: 600px){
+    .header_left{
+        width:130px ;
+    }
+    .header_input{
+        width: 50vw;
+        margin-right: 35px;
+    }
+    .header_input > input{
+        width:100px;
+    }    
+}
+
+.header_inputbutton{
+    width: 50px !important;
+    /* padding-right: 20px; */
+    /* padding-left: 20px; */
+    background-color: white;
+    border-left: 1px solid black;
+    color: grey;
+}
+
+.header_icons{
+    display: flex;
+    align-items: center;
+}
+
+.header_icon{
+    margin-right: 8px;
+}
