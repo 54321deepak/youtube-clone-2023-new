@@ -14,7 +14,7 @@
     object-fit: contain ;      /*good*/
     margin-left:20px;
 }
- @media only screen and (min-width:375px) and (max-width:516px){
+ @media only screen  and (max-width:516px){
      
     .header_left{
         margin-right: 29px;
